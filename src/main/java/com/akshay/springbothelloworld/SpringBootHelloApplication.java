@@ -37,6 +37,7 @@ public class SpringBootHelloApplication {
     }
 
     // Register Listener
+	@Bean
     public ServletListenerRegistrationBean getServletListenerRegistrationBean() {
 	    ServletListenerRegistrationBean listenerBean = new ServletListenerRegistrationBean(new HelloListener());
 	    return listenerBean;
